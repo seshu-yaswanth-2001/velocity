@@ -54,7 +54,7 @@ Built with the **MERN Stack** (MongoDB, Express, React, Node.js) and **Socket.io
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/velocity.git
+   git clone https://github.com/seshu-yaswanth-2001/velocity.git
    ```
 2. Install dependencies for both Client and Server:
    ```bash
