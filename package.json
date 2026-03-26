@@ -1,0 +1,38 @@
+{
+  "name": "velocity",
+  "version": "1.0.0",
+  "description": "Enterprise-grade collaborative project management suite built with the MERN stack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seshu-yaswanth-2001/velocity.git"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodejs",
+    "socketio",
+    "monorepo",
+    "project-management",
+    "velocity"
+  ],
+  "author": "Seshu Yaswanth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seshu-yaswanth-2001/velocity/issues"
+  },
+  "homepage": "https://github.com/seshu-yaswanth-2001/velocity#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
