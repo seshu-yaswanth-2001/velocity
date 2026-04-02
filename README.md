@@ -45,7 +45,56 @@ Built with the **MERN Stack** (MongoDB, Express, React, Node.js) and **Socket.io
 
 ---
 
-## 🚦 Getting Started
+## � Project Structure
+
+Velocity is organized as a **monorepo** with three main packages:
+
+```
+velocity/
+├── client/                    # React frontend application (Vite)
+│   ├── src/
+│   │   ├── App.tsx           # Main app component
+│   │   ├── main.tsx          # React entry point
+│   │   ├── App.css           # Application styles
+│   │   ├── index.css         # Global styles
+│   │   └── assets/           # Static assets (images, icons)
+│   ├── index.html            # HTML template
+│   ├── vite.config.ts        # Vite configuration
+│   ├── tsconfig.json         # TypeScript configuration
+│   └── package.json          # Client dependencies
+│
+├── server/                    # Express backend server
+│   ├── src/
+│   │   └── index.ts          # Server entry point (includes API routes, Socket.io setup)
+│   ├── tsconfig.json         # TypeScript configuration
+│   └── package.json          # Server dependencies
+│
+├── shared/                    # Shared types and schemas (consumed by both client & server)
+│   ├── src/
+│   │   ├── index.ts          # Exports shared utilities and types
+│   │   └── schemas/          # Data validation schemas
+│   │       └── user.ts       # User schema definitions
+│   ├── tsconfig.json         # TypeScript configuration
+│   ├── tsconfig.app.json     # App-specific TypeScript config
+│   └── package.json          # Shared package dependencies
+│
+├── tsconfig.json             # Root TypeScript configuration
+├── package.json              # Root package.json (monorepo setup)
+├── README.md                 # This file
+└── LICENSE                   # License information
+```
+
+### 📦 Package Breakdown
+
+| Package | Purpose | Key Technologies |
+|---------|---------|------------------|
+| **client** | React-based user interface with real-time features | React, Vite, TypeScript, Tailwind CSS, Framer Motion |
+| **server** | Express backend with Socket.io real-time sync | Node.js, Express, Socket.io, MongoDB, Mongoose |
+| **shared** | Common types, interfaces, and validation schemas | TypeScript, Zod/Joi (validation) |
+
+---
+
+## �🚦 Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
