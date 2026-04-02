@@ -4,6 +4,7 @@
   "description": "Enterprise-grade collaborative project management suite built with the MERN stack.",
   "private": true,
   "workspaces": [
+    "shared",
     "server",
     "client"
   ],
