@@ -2,8 +2,10 @@
 export {
   userSchema,
   createUserSchema,
+  registerUserSchema,
   updateUserSchema,
   type User,
   type CreateUser,
+  type RegisterUser,
   type UpdateUser,
-} from './schemas/user';
+} from "./schemas/user";
